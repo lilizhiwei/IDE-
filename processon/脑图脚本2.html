@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.processon.com/" />
+<title>查看功能</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">查看功能</td></tr>
+</thead><tbody>
+<!--查看与我协作的-->
+<tr>
+	<td>click</td>
+	<td>//div[2]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.title</td>
+	<td>标题</td>
+</tr>
+<!--查看我的收藏-->
+<tr>
+	<td>click</td>
+	<td>//div[3]/span[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.owner</td>
+	<td>拥有者</td>
+</tr>
+<!--查看最近修改-->
+<tr>
+	<td>click</td>
+	<td>//div[@onclick=&quot;DM.load({resource: 'history', folderId: ''})&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.modified</td>
+	<td>最后修改</td>
+</tr>
+<!--查看回收站-->
+<tr>
+	<td>click</td>
+	<td>css=span.nav-icons.mytrash</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.title</td>
+	<td>标题</td>
+</tr>
+<!--回到我的文件-->
+<tr>
+	<td>click</td>
+	<td>css=span.nav-item-title</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ProcessOn - 我的文件</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.title</td>
+	<td>标题</td>
+</tr>
+</tbody></table>
+</body>
+</html>

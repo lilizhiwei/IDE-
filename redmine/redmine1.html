@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.hostedredmine.com/" />
+<title>readme1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">readme1</td></tr>
+</thead><tbody>
+<!--进入hostedredmine网址点击登录-->
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Online Project Management :: Free Redmine Hosting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Online Project Management :: Free Redmine Hosting</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=登录</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Online Project Management :: Free Redmine Hosting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=td &gt; label</td>
+	<td>登录名:</td>
+</tr>
+<!--输入账号密码并登录-->
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>test_2016_1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>Passw0rd!</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Online Project Management :: Free Redmine Hosting</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Online Project Management :: Free Redmine Hosting</td>
+	<td></td>
+</tr>
+<!--进入一个项目-->
+<tr>
+	<td>selectAndWait</td>
+	<td>id=project_quick_jump_box</td>
+	<td>label=auto_test_demo</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>概述 - auto_test_demo - Online Project Management :: Free Redmine Hosting</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>auto_test_demo</td>
+</tr>
+</tbody></table>
+</body>
+</html>

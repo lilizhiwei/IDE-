@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://github.com/" />
+<title>5</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">5</td></tr>
+</thead><tbody>
+<!--打开github-->
+<tr>
+	<td>open</td>
+	<td>/lilizhiwei</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>lilizhiwei (lilizhiwei)</td>
+	<td></td>
+</tr>
+<!--新建一个有README.md的仓库且文件中填写数据-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=New repository</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Create a New Repository</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h2.subhead-heading</td>
+	<td>Create a new repository</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>id=repository_name</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=repository_name</td>
+	<td>text</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>id=repository_description</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=repository_description</td>
+	<td>hollo!</td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>id=repository_auto_init</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=repository_auto_init</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>lilizhiwei/text: hollo!</td>
+	<td></td>
+</tr>
+<!--打开README.md文件并对文件内容进行修改-->
+<tr>
+	<td>click</td>
+	<td>id=04c6e90faac2675aa89e2176d2eec7d8-a64e35159ac69aac8b18ada67d808b508223529a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>text/* at master · lilizhiwei/text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>xpath=//article/p[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Editing text/* at master · lilizhiwei/text</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=blob_contents_readme-md</td>
+	<td># text<br />hollo!world<br /></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submit-file</td>
+	<td></td>
+</tr>
+<tr>
+	<td>highlight</td>
+	<td>xpath=//article/p[1]</td>
+	<td></td>
+</tr>
+<!--删除仓库-->
+<tr>
+	<td>click</td>
+	<td>//div[@id='js-repo-pjax-container']/div/div[2]/nav/a[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.facebox-content.dangerzone &gt; form.js-normalize-submit &gt; p &gt; input[name=&quot;verify&quot;]</td>
+	<td>text</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=(//button[@type='submit'])[11]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

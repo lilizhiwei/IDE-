@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.processon.com/" />
+<title>登录</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">登录</td></tr>
+</thead><tbody>
+<!--进入脑图网址-->
+<tr>
+	<td>open</td>
+	<td>/tour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ProcessOn - 免费在线作图，实时协作</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.banner-content</td>
+	<td>我们精心设计的整个绘图过程，使其尽可能简单。<br />我们认为，一张完美的图，一定是多个人思想碰撞的结晶，ProcessOn让协作绘图变的如此轻松。 登录&nbsp;&nbsp;&nbsp;&nbsp;注册</td>
+</tr>
+<!--点击登录-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=登录</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>登录 | ProcessOn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.signin-bg</td>
+	<td></td>
+</tr>
+<!--输入账号密码并点击登录-->
+<tr>
+	<td>type</td>
+	<td>id=login_email</td>
+	<td>1548790965@qq.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login_password</td>
+	<td>li1548790965</td>
+</tr>
+<!--成功登录，进入脑图页面-->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=signin_btn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.dir &gt; a</td>
+	<td>我的文件</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>ProcessOn - 我的文件</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
