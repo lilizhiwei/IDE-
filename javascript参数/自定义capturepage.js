@@ -4,6 +4,7 @@ function fileName(){
      (1+lzwTime.getMonth())+'-'+
      lzwTime.getDate()+'-'+
      lzwTime.getHours()+'-'+
-     lzwTime.getMinutes()+'.png';
+     lzwTime.getMinutes()+'-'+
+     lzwTime.getSeconds()+'.png';
      return fileName
 }
