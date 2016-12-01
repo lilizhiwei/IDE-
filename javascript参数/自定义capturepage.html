@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.processon.com/" />
+<title>自定义capturepage</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">自定义capturepage</td></tr>
+</thead><tbody>
+<!--1.补货截图，但文件名固定，会覆盖上次的截图-->
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>C:\Users\Administrator\IDE\IDE-\pattern参数-时间校准网\时间页面截图\time.png</td>
+	<td></td>
+</tr>
+<!--2.文件名参数化，时间和日期作为文件名-->
+<tr>
+	<td>storeEval</td>
+	<td>var lzwTime= new Date(Date.now()); (1900+lzwTime.getYear())+'-'+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1+lzwTime.getMonth())+'-'+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lzwTime.getDate()+'-'+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lzwTime.getHours()+'-'+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lzwTime.getMinutes()+'.png'</td>
+	<td>fileName</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>C:\Users\Administrator\IDE\IDE-\pattern参数-时间校准网\时间页面截图\${fileName}</td>
+	<td></td>
+</tr>
+<!--用户自定义扩展-->
+<tr>
+	<td>storeEval</td>
+	<td>fileName()</td>
+	<td>fileName</td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>C:\Users\Administrator\IDE\IDE-\pattern参数-时间校准网\时间页面截图\${fileName}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
