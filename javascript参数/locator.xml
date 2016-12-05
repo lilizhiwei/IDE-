@@ -1,0 +1,3 @@
+<testdata>
+  <test a="id=login_email" b="id=login_password" c="id=signin_btn" d="css=span.button"/>
+</testdata>

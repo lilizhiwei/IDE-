@@ -1,0 +1,5 @@
+<testdata>
+  <test userName="wangding@chmiot.net" passWord="Passw0rd" assert="登录 | ProcessOn" verifyTarget="id=signin_btn" verifyValue="立即登录" a="id=login_email" b="id=login_password"/>
+  <test userName="wangding@chmiot.ne" passWord="Passw0rd!" assert="登录 | ProcessOn" verifyTarget="id=signin_btn" verifyValue="立即登录" a="id=login_email" b="id=login_password"/>
+  <test userName="wangding@chmiot.net" passWord="Passw0rd!" assert="ProcessOn - 我的文件" verifyTarget="css=span.button" verifyValue="新建文件" a="id=login_email" b="id=login_password"/>
+</testdata>

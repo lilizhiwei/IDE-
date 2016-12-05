@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.processon.com/" />
+<title>xml脑图登录</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">xml脑图登录</td></tr>
+</thead><tbody>
+<tr>
+	<td>loadTestData</td>
+	<td>file:///C:/Users/Administrator/IDE/IDE-/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/%E5%BE%AA%E7%8E%AF/xml%E8%84%91%E5%9B%BE%E7%99%BB%E5%BD%95.xml</td>
+	<td></td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>!testdata.EOF()</td>
+	<td></td>
+</tr>
+<tr>
+	<td>nextTestData</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/tour</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=登录</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>${a}</td>
+	<td>${userName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>${b}</td>
+	<td>${passWord}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>${verifyTarget}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>${assert}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>${verifyTarget}</td>
+	<td>${verifyValue}</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
