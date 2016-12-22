@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://edu.51cto.com/user/" />
+<title>html平均分1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">html平均分1</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://lilizhiwei.github.io/test-page/DDT-html/html平均分.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByTagName(&quot;tr&quot;).length</td>
+	<td>rows</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array(${rows})</td>
+	<td>shuzu1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array(${rows})</td>
+	<td>shuzu2</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array(${rows})</td>
+	<td>shuzu3</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array(${rows})</td>
+	<td>shuzu4</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${n}&lt;=${rows}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${n}]/td[1]</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${n}]/td[2]</td>
+	<td>b</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${n}]/td[3]</td>
+	<td>c</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${n}]/td[4]</td>
+	<td>d</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>javascript{storedVars.shuzu1[storedVars.n]=storedVars.a}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>javascript{storedVars.shuzu2[storedVars.n]=storedVars.b}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>javascript{storedVars.shuzu3[storedVars.n]=storedVars.c}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>javascript{storedVars.shuzu4[storedVars.n]=storedVars.d}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${n}+1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>len</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>sum</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${n}&lt;=${rows}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>javascript{storedVars.shuzu1[storedVars.n]}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>javascript{storedVars.shuzu2[storedVars.n]}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>javascript{storedVars.shuzu3[storedVars.n]}</td>
+	<td>他的学习记录 (共*条)</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>javascript{storedVars.shuzu4[storedVars.n]}</td>
+	<td>len</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${len}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Number(storedVars['len'])+Number(storedVars['sum'])</td>
+	<td>sum</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${sum}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${n}+1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>29</td>
+	<td>x</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Number(storedVars['sum'])/Number(storedVars['x'])</td>
+	<td>pingjun</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${pingjun}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>sum</td>
+</tr>
+</tbody></table>
+</body>
+</html>
