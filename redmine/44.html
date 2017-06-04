@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.yyddd.com/" />
+<title>44</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">44</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>https://lilizhiwei.github.io/test-page/cuowu.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.getElementsByTagName(&quot;tr&quot;).length</td>
+	<td>rows</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array(${rows})</td>
+	<td>shuzu1</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array(${rows})</td>
+	<td>shuzu2</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${n}&lt;=${rows}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${n}]/td[1]</td>
+	<td>x</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//tr[${n}]/td[2]</td>
+	<td>y</td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>javascript{storedVars.shuzu1[storedVars.n]=storedVars.x}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>javascript{storedVars.shuzu2[storedVars.n]=storedVars.y}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${n}+1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/pc/login.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>统金 - 后台登录</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h3.font-size-24</td>
+	<td>后台登录</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${n}&lt;=${rows}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=loginAccount</td>
+	<td>javascript{storedVars.shuzu1[storedVars.n]}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=loginPassword</td>
+	<td>javascript{storedVars.shuzu2[storedVars.n]}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.layui-layer-content.layui-layer-padding</td>
+	<td>*</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${n}+1</td>
+	<td>n</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
