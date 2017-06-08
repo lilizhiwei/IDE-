@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.yyddd.com/" />
+<title>cuowu</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">cuowu</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/pc/login.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=//div/div[2]/form/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//li[5]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[2]/div[1]/div/button[1]</td>
+	<td></td>
+</tr>
+<!--用户名为空-->
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>客户姓名不能为空！</td>
+	<td></td>
+</tr>
+<!--验证编号不符合规则-->
+<tr>
+	<td>storeEval</td>
+	<td>Math.round(Math.random()*1000) + &quot;李志伟&quot;</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='']</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.form-control.con</td>
+	<td>123李志伟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>编号不正确！</td>
+	<td></td>
+</tr>
+<!--编号重复-->
+<tr>
+	<td>type</td>
+	<td>css=input.form-control.con</td>
+	<td>12345678</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[2]/div[1]/div/button[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round(Math.random()*1000) + &quot;李志伟&quot;</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='']</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.form-control.con</td>
+	<td>12345678</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>编号已经被使用！</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.font-size-14</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[18]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=确定</td>
+	<td></td>
+</tr>
+<!--手机号不正确-->
+<tr>
+	<td>click</td>
+	<td>xpath=//div[2]/div[1]/div/button[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round(Math.random()*1000) + &quot;李志伟&quot;</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='']</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[2]/div[1]/div[5]/div/div[1]/input</td>
+	<td>李志伟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>电话项的第1条手机，内容必须是合格的！</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[2]/div[1]/div[5]/div/div[1]/input</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fa.fa-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div[5]/div[2]/div[1]/input</td>
+	<td>李志伟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>电话项的第2条住宅电话，内容必须是合格的！</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div[5]/div[2]/div[1]/input</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.fa.fa-plus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div[5]/div[3]/div[1]/input</td>
+	<td>李志伟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>电话项的第3条办公电话，内容必须是合格的！</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div[5]/div[3]/div[1]/input</td>
+	<td>123456</td>
+</tr>
+<!--QQ不正确-->
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div[6]/div/div[1]/input</td>
+	<td>李志伟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>即时聊天项的第1条QQ，内容必须是合格的！</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div[6]/div/div[1]/input</td>
+	<td>154</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='exampleTabsLineOne']/div[6]/div/div[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[1]/div[6]/div[2]/div[1]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=微信</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[2]/div[1]/div[6]/div[2]/div[1]/input</td>
+	<td>李志伟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>即时聊天项的第2条微信，内容必须是合格的！</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[2]/div[1]/div[6]/div[2]/div[1]/input</td>
+	<td>123456</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='exampleTabsLineOne']/div[6]/div/div[3]/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[2]/div[1]/div[6]/div[3]/div[1]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[6]/div[3]/div[1]/ul/li[3]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[6]/div[3]/div[1]/input</td>
+	<td>李志伟</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>即时聊天项的第3条旺旺，内容必须是合格的！</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

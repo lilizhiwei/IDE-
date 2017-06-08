@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.yyddd.com/" />
+<title>addUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">addUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/pc/login.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>xpath=//div/div[2]/form/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//li[5]/ul/li/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[2]/div[1]/div/button[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.white</td>
+	<td>新增客户</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round(Math.random()*1000) + &quot;李志伟&quot;</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='']</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[2]/div/a/img</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.upload-file-input</td>
+	<td>C:\图片\123.jpg</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='layui-layer1']/div[3]/div[2]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div/div/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div[1]/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>xpath=//div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div[1]/div/div/div/div/ul/li[2]/a/span[1]</td>
+	<td>a</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${a} == false</td>
+	<td>YES</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>NO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>YES</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[19]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.layui-layer-input</td>
+	<td>客户</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=确定</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@type='button'])[18]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>NO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[2]/div[2]/div[2]/div[1]/div/div[2]/div[1]/div[1]/div/div/div/div/ul/li[2]/a/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round(Math.random()*1000)+Math.round(Math.random()*1000) + Math.round(Math.random()*1000)</td>
+	<td>bianhao</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input.form-control.con</td>
+	<td>${bianhao}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[2]/div[1]/div[4]/div/div/input</td>
+	<td>李志伟</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[2]/div[1]/div[5]/div/div[1]/input</td>
+	<td>13140023070</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div[6]/div/div[1]/input</td>
+	<td>1548790965</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[2]/div[1]/div[7]/div/div/input</td>
+	<td>www.baidu.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[1]/div/div[2]/div[1]/div[8]/div[1]/div/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='webuiPopover0']/div[2]/div/div/div/div[2]/div/dl/dd/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>xpath=//div/div[2]/dl/dd/button</td>
+	<td>*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;合肥市&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>xpath=//div/div[3]/dl/dd/button</td>
+	<td>*</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button[title=&quot;市辖区&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div/div[2]/div[1]/div[8]/div[2]/div/input</td>
+	<td>安徽合肥</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=其他信息</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=//div[2]/div[2]/div[1]/div/div/div/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=小兵</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=staff</td>
+	<td>label=小兵</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=//div[1]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div/div/input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[3]/div/div/input</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[4]/div/div[1]/input</td>
+	<td>li@qq.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=male</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=brd</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.datepicker-years &gt; table.table-condensed &gt; tfoot &gt; tr &gt; th.today</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[8]/div/div[1]/input</td>
+	<td>lili@qq.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[2]/div[2]/div[1]/div/div[2]/div[2]/div[9]/div/div/input</td>
+	<td>无</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=/html/body/div[2]/div[4]/div[1]/div[1]/div/div/div/div/div[2]/div[1]/div/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=//tr/td[4]/div/div</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
